@@ -83,7 +83,7 @@ public class MorseCodeConverter {
     }
 
     public static void main(String[] args) {
-        while (true) {
+
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Morse alifbosi dasturi");
@@ -105,9 +105,10 @@ public class MorseCodeConverter {
                 System.out.println("Dekodlangan matn: " + textResult);
             } else {
                 System.out.println("Noto'g'ri tanlov! Dastur yakunlanadi.");
+
             }
 
             scanner.close();
         }
     }
-}
+
