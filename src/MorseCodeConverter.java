@@ -83,29 +83,31 @@ public class MorseCodeConverter {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Morse alifbosi dasturi");
-        System.out.println("1. Matnni Morse alifbosiga aylantirish");
-        System.out.println("2. Morse alifbosini matnga aylantirish");
-        System.out.print("Tanlovni kiriting (1 yoki 2): ");
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // Scannerni tozalash
+            System.out.println("Morse alifbosi dasturi");
+            System.out.println("1. Matnni Morse alifbosiga aylantirish");
+            System.out.println("2. Morse alifbosini matnga aylantirish");
+            System.out.print("Tanlovni kiriting (1 yoki 2): ");
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Scannerni tozalash
 
-        if (choice == 1) {
-            System.out.print("Matnni kiriting: ");
-            String input = scanner.nextLine();
-            String morseResult = textToMorse(input);
-            System.out.println("Morse alifbosiga aylantirilgan matn: " + morseResult);
-        } else if (choice == 2) {
-            System.out.print("Morse alifbosida matnni kiriting: ");
-            String input = scanner.nextLine();
-            String textResult = morseToText(input);
-            System.out.println("Dekodlangan matn: " + textResult);
-        } else {
-            System.out.println("Noto'g'ri tanlov! Dastur yakunlanadi.");
+            if (choice == 1) {
+                System.out.print("Matnni kiriting: ");
+                String input = scanner.nextLine();
+                String morseResult = textToMorse(input);
+                System.out.println("Morse alifbosiga aylantirilgan matn: " + morseResult);
+            } else if (choice == 2) {
+                System.out.print("Morse alifbosida matnni kiriting: ");
+                String input = scanner.nextLine();
+                String textResult = morseToText(input);
+                System.out.println("Dekodlangan matn: " + textResult);
+            } else {
+                System.out.println("Noto'g'ri tanlov! Dastur yakunlanadi.");
+            }
+
+            scanner.close();
         }
-
-        scanner.close();
     }
 }
