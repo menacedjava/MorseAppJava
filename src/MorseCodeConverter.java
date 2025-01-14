@@ -106,6 +106,7 @@ public class MorseCodeConverter {
             } else {
                 System.out.println("Noto'g'ri tanlov! Dastur yakunlanadi.");
                 System.out.println("ok");
+                System.out.println("come again");
             }
 
             scanner.close();
