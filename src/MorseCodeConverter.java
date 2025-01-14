@@ -105,7 +105,7 @@ public class MorseCodeConverter {
                 System.out.println("Dekodlangan matn: " + textResult);
             } else {
                 System.out.println("Noto'g'ri tanlov! Dastur yakunlanadi.");
-
+                System.out.println("ok");
             }
 
             scanner.close();
