@@ -91,7 +91,7 @@ public class MorseCodeConverter {
             System.out.println("2. Morse alifbosini matnga aylantirish");
             System.out.print("Tanlovni kiriting (1 yoki 2): ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Scannerni tozalash
+            scanner.nextLine();
 
             if (choice == 1) {
                 System.out.print("Matnni kiriting: ");
